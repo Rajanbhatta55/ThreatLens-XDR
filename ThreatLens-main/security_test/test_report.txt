@@ -1,0 +1,2 @@
+Sample security report for ThreatLens
+Test data: threat detection results
