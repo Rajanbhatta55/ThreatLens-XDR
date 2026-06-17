@@ -49,12 +49,7 @@ completion = [
 
 [project.scripts]
 threatlens = "threatlens.cli:main"
-
-[project.urls]
-Repository = "https://github.com/your-username/ThreatLens"
-Issues = "https://github.com/your-username/ThreatLens/issues"
-Docker = "https://github.com/your-username/ThreatLens#docker"
-
+@
 # ── Ruff (linter + formatter) ───────────────────────────────────────────────
 
 [tool.ruff]
