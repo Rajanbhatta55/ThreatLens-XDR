@@ -1,7 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square">
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
   <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-mapped-red?style=flat-square">
   <img src="https://img.shields.io/badge/Sigma-compatible-blueviolet?style=flat-square">
 </p>
@@ -84,3 +83,23 @@ source .venv/bin/activate   # Linux/macOS
 .venv\Scripts\activate      # Windows
 
 pip install -e .
+
+⚡ Quick Start
+```bash
+threatlens scan logs/security.json
+
+
+🧠 Core Commands
+🔎 Scan Logs
+
+```bash
+threatlens scan logs/
+threatlens scan logs/ --min-severity high --verbose
+threatlens scan logs/ --custom-rules my_rules/
+threatlens scan logs/ --timeline timeline.html
+
+
+📊 Summary & Rules
+```bash
+threatlens summary report.json
+threatlens rules
