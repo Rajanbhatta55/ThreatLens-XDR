@@ -107,7 +107,7 @@ Log Sources (EVTX / JSON / Syslog)
 
 ```bash
 
-git clone https://github.com/your-org/ThreatLens-XDR.git
+git clone https://github.com/Rajanbhatta55/ThreatLens-XDR
 cd ThreatLens-XDR
 
 python -m venv .venv
@@ -174,24 +174,24 @@ threatlens scan logs/ --exclude BruteForceDetector --exclude lateral
 
 📂 Supported Data Sources
 ```
-JSON / NDJSON logs
-Windows EVTX logs
-Linux Syslog (RFC 3164 / 5424)
-SIEM exports (Wazuh compatible)
+>JSON / NDJSON logs
+>Windows EVTX logs
+>Linux Syslog (RFC 3164 / 5424)
+>SIEM exports (Wazuh compatible)
 ```
 
 🛡 MITRE ATT&CK Coverage
 ```
-Initial Access
-Execution
-Persistence
-Privilege Escalation
-Defense Evasion
-Credential Access
-Discovery
-Lateral Movement
-Exfiltration
-Command & Control
+>Initial Access
+>Execution
+>Persistence
+>Privilege Escalation
+>Defense Evasion
+>Credential Access
+>Discovery
+>Lateral Movement
+>Exfiltration
+>Command & Control
 ```
 
 📊 Example Output
@@ -213,8 +213,9 @@ pytest tests/
 🏢 Tool Vision
 
 ThreatLens-XDR is evolving into:
-
-SOC Automation Platform
-Threat Intelligence Engine
-XDR (Extended Detection & Response) System
-Digital Forensics Suite
+```
+>SOC Automation Platform
+>Threat Intelligence Engine
+>XDR (Extended Detection & Response) System
+>Digital Forensics Suite
+```
