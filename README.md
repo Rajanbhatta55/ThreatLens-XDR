@@ -33,6 +33,29 @@ Built for:
 
 ---
 
+## 📸 Overview
+
+<p align="center">
+  <img src="assets/overview1.png" width="800">
+</p>
+
+---
+
+## 🧾 Report Example
+
+<p align="center">
+  <img src="assets/report.png" width="800">
+</p>
+
+---
+
+## 🆘 Help Screen
+
+<p align="center">
+  <img src="assets/help.png" width="800">
+</p>
+
+
 ## ⚙️ Platform Capabilities
 
 ### 🔍 Real-Time Threat Detection
