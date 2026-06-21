@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://img.shields.io/badge/ThreatLens-XDR-000000?style=for-the-badge">
 </p>
@@ -15,6 +14,7 @@
   <img src="https://img.shields.io/badge/Sigma-Rules-blueviolet?style=flat-square">
   <img src="https://img.shields.io/badge/Encryption-AES--256-green?style=flat-square">
 </p>
+
 
 ---
 
@@ -103,6 +103,58 @@ Log Sources (EVTX / JSON / Syslog)
 ```
 
 
+📦 Installation
+
+```bash
+
+git clone https://github.com/your-org/ThreatLens-XDR.git
+cd ThreatLens-XDR
+
+python -m venv .venv
+source .venv/bin/activate   # Linux / macOS
+.venv\Scripts\activate      # Windows
+
+pip install -e .
+```
+
+⚡ Quick Start
+
+```bash
+threatlens scan logs/security.json
+```
+
+📊 Reporting & Intelligence
+
+```bash
+threatlens summary report.json
+threatlens rules
+```
+
+🔐 Security Operations
+
+```bash
+Encrypt Evidence (AES-256)
+```
+
+```bash
+threatlens encrypt-report report.pdf --key-file aes.key
+```
+
+```bash
+Decrypt Evidence
+threatlens decrypt-report report.pdf.enc --key-file aes.key
+```
+
+```bash
+Sign Reports (RSA-2048)
+threatlens sign-report report.pdf --private-key private.pem
+```
+
+```bash
+Verify Chain of Custody
+threatlens verify-chain --database threatlens.db
+```
+
 ### Reports & Export
 
 ```bash
@@ -118,3 +170,46 @@ threatlens summary report.json
 # Disable a noisy built-in detector by class name or substring
 threatlens scan logs/ --exclude BruteForceDetector --exclude lateral
 ```
+
+
+📂 Supported Data Sources
+
+JSON / NDJSON logs
+Windows EVTX logs
+Linux Syslog (RFC 3164 / 5424)
+SIEM exports (Wazuh compatible)
+
+🛡 MITRE ATT&CK Coverage
+Initial Access
+Execution
+Persistence
+Privilege Escalation
+Defense Evasion
+Credential Access
+Discovery
+Lateral Movement
+Exfiltration
+Command & Control
+
+📊 Example Output
+[HIGH] Credential Attack Detected
+MITRE: T1110 - Brute Force
+Source IP: 192.168.1.10
+Target Account: ADMIN
+Event Count: 34 failed login attempts
+Confidence: 96%
+
+🧪 Development
+```bash
+pip install -e ".[dev]"
+pytest tests/
+```
+
+🏢 Tool Vision
+
+ThreatLens-XDR is evolving into:
+
+SOC Automation Platform
+Threat Intelligence Engine
+XDR (Extended Detection & Response) System
+Digital Forensics Suite
