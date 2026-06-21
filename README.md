@@ -173,13 +173,15 @@ threatlens scan logs/ --exclude BruteForceDetector --exclude lateral
 
 
 📂 Supported Data Sources
-
+```
 JSON / NDJSON logs
 Windows EVTX logs
 Linux Syslog (RFC 3164 / 5424)
 SIEM exports (Wazuh compatible)
+```
 
 🛡 MITRE ATT&CK Coverage
+```
 Initial Access
 Execution
 Persistence
@@ -190,14 +192,17 @@ Discovery
 Lateral Movement
 Exfiltration
 Command & Control
+```
 
 📊 Example Output
+```
 [HIGH] Credential Attack Detected
 MITRE: T1110 - Brute Force
 Source IP: 192.168.1.10
 Target Account: ADMIN
 Event Count: 34 failed login attempts
 Confidence: 96%
+```
 
 🧪 Development
 ```bash
